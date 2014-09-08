@@ -1,0 +1,21 @@
+<perch:before>
+<div class="row">
+</perch:before>
+
+  <div class="col-xs-6 col-md-4">
+  	<div class="thumbnail">
+  		<img src="<perch:content id="image" type="image" label="Image" width="242" height="200" crop="true" />" alt="<perch:content id="alt" type="text" label="Alt text" />" />
+    	<div class="caption">
+    		<h3><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h3>
+    		<perch:content id="content" type="textarea" label="Content" required="true" size="s" markdown="true" editor="markitup" />
+  			<p><a href="<perch:content id="link" type="text" label="Link" required="true" />" class="btn btn-primary" role="button">
+  				<perch:content id="linktext" type="text" label="Link text" required="true" help="Text for the button, keep it short but try to avoid using click here!" />
+  			</a></p>
+  		</div>
+  	</div>
+    
+  </div>
+
+<perch:after>
+</div>
+</perch:after>

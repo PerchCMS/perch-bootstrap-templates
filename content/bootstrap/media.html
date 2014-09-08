@@ -1,0 +1,9 @@
+<div class="media">
+  <a class="pull-left" href="<perch:content id="link" type="text" label="Link" required="true" />">
+    <img src="<perch:content id="image" type="image" label="Image" width="64" height="64" crop="true" />" alt="<perch:content id="alt" type="text" label="Alt text" />" class="media-object" />
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h4>
+    <perch:content id="content" type="textarea" label="Content" required="true" size="s" markdown="true" editor="markitup" />
+  </div>
+</div>

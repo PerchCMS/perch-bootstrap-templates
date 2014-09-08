@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  
+  <div class="panel-heading">
+    <h3 class="panel-title"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h3>
+  </div>
+  
+  <div class="panel-body">
+    <perch:content id="content" type="textarea" label="Content" required="true" size="m" markdown="true" editor="markitup" />
+
+    
+
+  </div>
+  <perch:repeater id="link_list" label="Resources list">
+      <perch:before>
+      <div class="list-group">
+      </perch:before>
+        <a class="list-group-item" href="<perch:content id="link" type="text" label="Link" required="true" />">
+          <h4 class="list-group-item-heading"><perch:content id="linkheading" type="text" label="Link heading" required="true" /></h4>
+          <p class="list-group-item-text"><perch:content id="linkdesc" type="text" label="Link short description" required="true" /></p>
+        </a>
+      <perch:after>
+      </div>
+      </perch:after>
+  </perch:repeater>
+   <perch:if exists="footertext"><div class="panel-footer"><perch:content id="footertext" type="text" label="Footer text" help="An optional footer for the panel" /></div></perch:if>
+
+</div>

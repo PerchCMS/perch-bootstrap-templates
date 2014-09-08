@@ -1,0 +1,13 @@
+<div class="panel <perch:content id="contextual" type="select" label="Panel context" options="Default|panel-default,Primary|panel-primary,Success|panel-success,Info|panel-info,Warning|panel-warning,Danger|panel-danger" />">
+  
+  <div class="panel-heading">
+    <h3 class="panel-title"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h3>
+  </div>
+  
+  <div class="panel-body">
+    <perch:content id="content" type="textarea" label="Content" required="true" size="m" markdown="true" editor="markitup" />
+  </div>
+
+   <perch:if exists="footertext"><div class="panel-footer"><perch:content id="footertext" type="text" label="Footer text" help="An optional footer for the panel" /></div></perch:if>
+
+</div>
